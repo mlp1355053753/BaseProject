@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		183912A32212A33A0095313E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183912A22212A33A0095313E /* AppDelegate.m */; };
-		183912A62212A33A0095313E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183912A52212A33A0095313E /* ViewController.m */; };
-		183912A92212A33A0095313E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183912A72212A33A0095313E /* Main.storyboard */; };
 		183912AB2212A33B0095313E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183912AA2212A33B0095313E /* Assets.xcassets */; };
 		183912AE2212A33B0095313E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183912AC2212A33B0095313E /* LaunchScreen.storyboard */; };
 		183912B12212A33B0095313E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183912B02212A33B0095313E /* main.m */; };
@@ -21,13 +19,11 @@
 		1839129E2212A33A0095313E /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183912A12212A33A0095313E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		183912A22212A33A0095313E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		183912A42212A33A0095313E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		183912A52212A33A0095313E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		183912A82212A33A0095313E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183912AA2212A33B0095313E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183912AD2212A33B0095313E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183912AF2212A33B0095313E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183912B02212A33B0095313E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		186504A922367FED0097D65B /* MLCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCommons.h; sourceTree = "<group>"; };
 		8B2897F830ED22F5CBB62EBB /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		981BA38A20042DD9DF6F34DA /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,17 +61,151 @@
 		183912A02212A33A0095313E /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
-				183912A12212A33A0095313E /* AppDelegate.h */,
-				183912A22212A33A0095313E /* AppDelegate.m */,
-				183912A42212A33A0095313E /* ViewController.h */,
-				183912A52212A33A0095313E /* ViewController.m */,
-				183912A72212A33A0095313E /* Main.storyboard */,
+				186504B2223681AA0097D65B /* Managers */,
+				186504AF2236811C0097D65B /* Utils */,
+				186504AE223680F70097D65B /* ThridParty */,
+				186504AA2236807C0097D65B /* Assistants */,
+				186504A422367E050097D65B /* App */,
+				186504A222367DDE0097D65B /* Modules */,
+				186504A522367F600097D65B /* Commons */,
+				186504A122367DC50097D65B /* Resources */,
+				186504A322367DEE0097D65B /* Supporting Files */,
+			);
+			path = BaseProject;
+			sourceTree = "<group>";
+		};
+		186504A122367DC50097D65B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				183912AA2212A33B0095313E /* Assets.xcassets */,
+				186504B12236817F0097D65B /* plists */,
+				186504B02236816B0097D65B /* html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		186504A222367DDE0097D65B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		186504A322367DEE0097D65B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				183912AC2212A33B0095313E /* LaunchScreen.storyboard */,
 				183912AF2212A33B0095313E /* Info.plist */,
 				183912B02212A33B0095313E /* main.m */,
 			);
-			path = BaseProject;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		186504A422367E050097D65B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				183912A12212A33A0095313E /* AppDelegate.h */,
+				183912A22212A33A0095313E /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		186504A522367F600097D65B /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				186504A922367FED0097D65B /* MLCommons.h */,
+				186504A622367F6E0097D65B /* Base */,
+				186504A822367F830097D65B /* Category */,
+				186504A722367F760097D65B /* UICommon */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		186504A622367F6E0097D65B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		186504A722367F760097D65B /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		186504A822367F830097D65B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		186504AA2236807C0097D65B /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				186504AB223680920097D65B /* Constant */,
+				186504AC2236809C0097D65B /* Macros */,
+				186504AD223680AC0097D65B /* Enums */,
+			);
+			path = Assistants;
+			sourceTree = "<group>";
+		};
+		186504AB223680920097D65B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		186504AC2236809C0097D65B /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		186504AD223680AC0097D65B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		186504AE223680F70097D65B /* ThridParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThridParty;
+			sourceTree = "<group>";
+		};
+		186504AF2236811C0097D65B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		186504B02236816B0097D65B /* html */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		186504B12236817F0097D65B /* plists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = plists;
+			sourceTree = "<group>";
+		};
+		186504B2223681AA0097D65B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		1B5DE20387B61031EC909E62 /* Pods */ = {
@@ -157,7 +287,6 @@
 			files = (
 				183912AE2212A33B0095313E /* LaunchScreen.storyboard in Resources */,
 				183912AB2212A33B0095313E /* Assets.xcassets in Resources */,
-				183912A92212A33A0095313E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183912A62212A33A0095313E /* ViewController.m in Sources */,
 				183912B12212A33B0095313E /* main.m in Sources */,
 				183912A32212A33A0095313E /* AppDelegate.m in Sources */,
 			);
@@ -226,14 +354,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		183912A72212A33A0095313E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183912A82212A33A0095313E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		183912AC2212A33B0095313E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7465L58JT;
-				INFOPLIST_FILE = BaseProject/Info.plist;
+				INFOPLIST_FILE = "BaseProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7465L58JT;
-				INFOPLIST_FILE = BaseProject/Info.plist;
+				INFOPLIST_FILE = "BaseProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
