@@ -24,6 +24,17 @@
 		183912AF2212A33B0095313E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183912B02212A33B0095313E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186504A922367FED0097D65B /* MLCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCommons.h; sourceTree = "<group>"; };
+		186504B3223750A00097D65B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		186504B72237AE150097D65B /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		186504B82237AE2D0097D65B /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		186504B92237B54A0097D65B /* UrlMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlMacro.h; sourceTree = "<group>"; };
+		186504BB2237C4700097D65B /* SingletonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
+		186504BC2237C4BB0097D65B /* WeakStrongMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakStrongMacro.h; sourceTree = "<group>"; };
+		186504BD2237C6780097D65B /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		186504BE2237C75B0097D65B /* ThirdMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdMacros.h; sourceTree = "<group>"; };
+		186504BF2237C9460097D65B /* BusinessMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessMacro.h; sourceTree = "<group>"; };
+		186504C02237C9830097D65B /* VersionMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionMacro.h; sourceTree = "<group>"; };
+		186504C12237C9D00097D65B /* ReleaseConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReleaseConfigMacro.h; sourceTree = "<group>"; };
 		8B2897F830ED22F5CBB62EBB /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		981BA38A20042DD9DF6F34DA /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +108,7 @@
 				183912AC2212A33B0095313E /* LaunchScreen.storyboard */,
 				183912AF2212A33B0095313E /* Info.plist */,
 				183912B02212A33B0095313E /* main.m */,
+				186504B3223750A00097D65B /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +167,7 @@
 		186504AB223680920097D65B /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				186504B82237AE2D0097D65B /* Constant.h */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -162,6 +175,15 @@
 		186504AC2236809C0097D65B /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				186504B72237AE150097D65B /* Macro.h */,
+				186504C12237C9D00097D65B /* ReleaseConfigMacro.h */,
+				186504B92237B54A0097D65B /* UrlMacro.h */,
+				186504C02237C9830097D65B /* VersionMacro.h */,
+				186504BB2237C4700097D65B /* SingletonMacro.h */,
+				186504BC2237C4BB0097D65B /* WeakStrongMacro.h */,
+				186504BD2237C6780097D65B /* ColorMacro.h */,
+				186504BE2237C75B0097D65B /* ThirdMacros.h */,
+				186504BF2237C9460097D65B /* BusinessMacro.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -484,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7465L58JT;
+				GCC_PREFIX_HEADER = "./BaseProject/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "BaseProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -503,6 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7465L58JT;
+				GCC_PREFIX_HEADER = "./BaseProject/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "BaseProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
